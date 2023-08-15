@@ -7,7 +7,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
 }
 :root {
   --red: rgba(208, 28, 40, 1);
@@ -43,12 +43,14 @@ ul {
 .main-page {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   max-width: 1280px;
-  margin: 10px auto;
+  margin: 20px auto;
   height: calc(100vh-72px);
 }
 .main-page > div > h1 {
   font-size: 108px;
+  max-width: 600px;
   line-height: 102px;
   font-weight: 800;
 }
