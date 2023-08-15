@@ -10,9 +10,9 @@ const MainPage = () => {
           SHOES.YOUR FEET DESERVE THE BEST AND WE’RE HERE TO HELP YOU WITH OUR
           SHOES.
         </p>
-        <div>
-          <button>Shop Now</button>
-          <button>Category</button>
+        <div className="buttons-cat">
+          <button className="shopnow-btn">Shop Now</button>
+          <button className="category-btn">Category</button>
         </div>
         <p>Also Available On</p>
         <div>
