@@ -21,7 +21,7 @@ const MainPage = () => {
         </div>
       </div>
       <div>
-        <img src="../src/assets/shoe_image.png" alt="ShoeImage" />
+        <img className="shoe" src="../src/assets/shoe_image.png" alt="ShoeImage" />
       </div>
     </div>
   );
