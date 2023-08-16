@@ -79,6 +79,8 @@ ul {
   font-weight: 600px;
   padding: 8px 14px;
   border: none;
+  border-radius: 4px;
+
 }
 .category-btn{
   background-color: transparent;
@@ -87,6 +89,8 @@ ul {
   font-weight: 600px;
   padding: 8px 14px;
   border: 1px solid var(--gray);
+  border-radius: 4px;
+
 }
 .logo-available{
   display: flex;
@@ -94,22 +98,19 @@ ul {
 }
 
 /*mobile responsive design */
-@media screen and (max-width:420px) {
+@media only screen and (max-width:480px){
   .header-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px;
+    margin: 5px 10px;
     max-width: 100%;
     cursor: pointer;
     /* height: 72px; */
-    
+    overflow: hidden;
   }
   .menu-list {
     display: none;
-    align-items: center;
-    gap: 16px;
-    font-size: 20px;
   }
   .main-page {
     display: flex;
@@ -125,18 +126,114 @@ ul {
   }
   .shoe{
     /* width: 80%; */
-    height: 360px;
-    width: 360px;
+    max-height: 360px;
+    max-width: 360px;
   }
   .description {
     font-size: 16px;
-    /* line-height: 24px; */
-    /* font-weight: 600; */
-    /* max-width: 400px; */
   }
   .buttons-cat{
     display: flex;
-    gap: 40px;
-   
+    gap: 20px;
+  }
+  .shopnow-btn{
+  
+    font-size: 16px;
+    font-weight: 600px;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 2px;
+  }
+  .category-btn{
+    font-size: 16px;
+    font-weight: 600px;
+    padding: 4px 8px;
+    border: 1px solid var(--gray);
+    border-radius: 2px;
+  }
+}
+
+/*tab responsive design */
+@media only screen and (max-width:768px) and (min-width:481px) {
+  .header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    max-width: 100%;
+    cursor: pointer;
+    height: 58px;
+  }
+  .menu-list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+  }
+  .main-page {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 10px;
+    /* margin: 10px auto; */
+  }
+  .main-page > div > h1 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .shoe{
+    /* width: 80%; */
+    height: auto;
+    max-width: 480px;
+  }
+  .description {
+    font-size: 16px;
+  }
+  .buttons-cat{
+    display: flex;
+    gap: 30px;
+  }
+}
+
+
+/*laptop and small screensresponsive design */
+@media only screen and (max-width:1024px) and (min-width:769px) {
+  .header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    max-width: 98%;
+    cursor: pointer;
+    height: 58px;
+  }
+  .menu-list {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    font-size: 24px;
+  }
+  .main-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 5px auto auto 20px;
+  }
+  .main-page > div > h1 {
+    font-size: 36px;
+    line-height: 32px;
+  }
+  .shoe{
+    height: auto;
+    max-width: 480px;
+  }
+  .description {
+    font-size: 16px;
+  }
+  .buttons-cat{
+    display: flex;
+    gap: 30px;
   }
 }
